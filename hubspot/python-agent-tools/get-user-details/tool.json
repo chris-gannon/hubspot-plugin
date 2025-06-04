@@ -1,0 +1,17 @@
+{
+    "id": "get-user-details",
+    "meta": {
+        "label": "Get HubSpot User Details",
+        "description": "Authenticates the current HubSpot private app access token, providing user information, hub details, authorized scopes, and account information."
+    },
+    "params": [
+        {
+            "name": "hubspot_api_connection",
+            "label": "HubSpot API Connection",
+            "type": "STRING",
+            "description": "Your HubSpot private app access token",
+            "mandatory": true,
+            "parameterSetId": "hubspot-api-connection"
+        }
+    ]
+}

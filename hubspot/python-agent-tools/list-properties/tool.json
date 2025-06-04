@@ -1,0 +1,17 @@
+{
+    "id": "list-properties",
+    "meta": {
+        "label": "List HubSpot Properties",
+        "description": "Retrieves the complete catalog of properties defined for any CRM object type."
+    },
+    "params": [
+        {
+            "name": "hubspot_api_connection",
+            "label": "HubSpot API Connection",
+            "type": "STRING",
+            "description": "Your HubSpot private app access token",
+            "mandatory": true,
+            "parameterSetId": "hubspot-api-connection"
+        }
+    ]
+}

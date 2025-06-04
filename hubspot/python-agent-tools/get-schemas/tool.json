@@ -1,0 +1,17 @@
+{
+    "id": "get-schemas",
+    "meta": {
+        "label": "Get HubSpot Schemas",
+        "description": "Retrieves available custom object schemas with their objectTypeId and definitions."
+    },
+    "params": [
+        {
+            "name": "hubspot_api_connection",
+            "label": "HubSpot API Connection",
+            "type": "STRING",
+            "description": "Your HubSpot private app access token",
+            "mandatory": true,
+            "parameterSetId": "hubspot-api-connection"
+        }
+    ]
+}

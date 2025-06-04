@@ -1,0 +1,17 @@
+{
+    "id": "search-objects",
+    "meta": {
+        "label": "Search HubSpot Objects",
+        "description": "Performs filtered searches across CRM records using complex criteria and property-based filtering."
+    },
+    "params": [
+        {
+            "name": "hubspot_api_connection",
+            "label": "HubSpot API Connection",
+            "type": "STRING",
+            "description": "Your HubSpot private app access token",
+            "mandatory": true,
+            "parameterSetId": "hubspot-api-connection"
+        }
+    ]
+}

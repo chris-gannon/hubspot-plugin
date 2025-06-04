@@ -1,0 +1,17 @@
+{
+    "id": "list-objects",
+    "meta": {
+        "label": "List HubSpot Objects",
+        "description": "Retrieves a paginated list of CRM records for a specified object type."
+    },
+    "params": [
+        {
+            "name": "hubspot_api_connection",
+            "label": "HubSpot API Connection",
+            "type": "STRING",
+            "description": "Your HubSpot private app access token",
+            "mandatory": true,
+            "parameterSetId": "hubspot-api-connection"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "meta": {
+        "label": "HubSpot",
+        "description": "Recipe to get HubSpot data",
+        "icon": "icon-group",
+        "author" : "Anavate Partners (Chris Gannon)"
+
+    },
+    "kind": "PYTHON",
+    "outputRoles": [
+        {
+           "name": "output",
+            "label": "Output Dataset",
+            "description": "",
+            "arity": "UNARY",
+            "acceptsDataset": true
+        }
+    ],
+    "params": [
+        {
+            "name": "hapikey",
+            "label": "HubSpot API key",
+            "type": "PASSWORD",
+            "mandatory": true
+        },
+        {
+            "name": "object_name",
+            "label": "Object to download",
+            "type": "SELECT",
+            "mandatory": true,
+            "selectChoices": [
+                {
+                    "value": "contacts",
+                    "label": "Contacts"
+                },
+                {
+                    "value": "companies",
+                    "label": "Companies"
+                }
+            ]
+        },
+        {
+            "name": "format",
+            "label": "Format of the dataset",
+            "type": "SELECT",
+            "mandatory": true,
+            "selectChoices": [
+                {
+                    "value": "JSON",
+                    "label": "JSON"
+                },
+                {
+                    "value": "Readable with columns",
+                    "label": "Readable with columns (Not recommended to work with property type 'All')"
+                }
+            ]
+        },
+                 {
+            "name": "properties_to_retrieve",
+            "label": "Property to retrieve",
+            "mandatory": true,
+            "type": "SELECT",
+            "selectChoices": [
+                {
+                    "value": "Standard",
+                    "label": "Default Properties"
+                },
+                {
+                    "value": "All",
+                    "label": "All Properties"
+                },
+                {
+                    "value": "Custom",
+                    "label": "Custom Properties"
+                }
+            ]
+        },
+         {
+            "name": "custom_properties_list",
+            "label": "Custom list of properties",
+            "description": "List here properties to retrieve from Hubspot by pressing enter key after each property name",
+            "type": "STRINGS",
+             "visibilityCondition": "model.properties_to_retrieve == 'Custom'"
+        }
+    ],
+    "resourceKeys": []
+}

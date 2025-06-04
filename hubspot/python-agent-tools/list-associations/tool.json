@@ -1,0 +1,17 @@
+{
+    "id": "list-associations",
+    "meta": {
+        "label": "List HubSpot Associations",
+        "description": "Retrieves existing relationships between a specific record and other associated records."
+    },
+    "params": [
+        {
+            "name": "hubspot_api_connection",
+            "label": "HubSpot API Connection",
+            "type": "STRING",
+            "description": "Your HubSpot private app access token",
+            "mandatory": true,
+            "parameterSetId": "hubspot-api-connection"
+        }
+    ]
+}
