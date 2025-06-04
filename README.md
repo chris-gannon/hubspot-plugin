@@ -1,4 +1,4 @@
-# HubSpot Plugin Documentation
+# HubSpot Plugin with Agent Tools
 
 ## Prerequisites
 
